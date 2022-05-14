@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/devchallenges.png" type="image/x-icon" />
+
+    <title>Edie</title>
+  </head>
+  <body class="font-Poppins bg-slate-50 text-gray-700">
+    <div class="w-[90%] mx-auto">
+      <!-- header -->
+      <header>
+        <!-- nav bar -->
+        <nav class="flex flex-wrap items-center justify-between w-full mt-7">
+          <!-- title -->
+          <div>
+            <h1 class="font-Heebo text-4xl">Edie</h1>
+          </div>
+
+          <!-- mobile icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="w-9 cursor-pointer lg:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+
+          <!-- nav bar menu -->
+          <div class="hidden w-full lg:flex lg:w-auto" id="menu">
+            <ul
+              class="text-xl flex flex-col items-center lg:flex-row lg:justify-between space-y-5 lg:space-y-0 lg:space-x-7"
+            >
+              <li>
+                <a class="block hover:text-purple-400 mt-7 lg:mt-0" href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="block hover:text-purple-400" href="#services">Services</a>
+              </li>
+              <li>
+                <a class="block hover:text-purple-400" href="#works">Our Works</a>
+              </li>
+              <li>
+                <a class="block hover:text-purple-400" href="#clients">Clients</a>
+              </li>
+              <li>
+                <a class="block hover:text-purple-400" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of nav bar menu -->
+        </nav>
+        <!-- end of nav bar -->
+      </header>
+      <!-- end of header -->
+
+      <main>
+        <div class="max-w-xl ml-5 md:ml-36 mt-16 tracking-wide">
+          <p class="text-blue-400 text-sm">Unhappy with your website?</p>
+          <h2
+            class="text-[1.85rem] md:text-5xl leading-snug md:leading-snug mt-2"
+          >
+            We create beautiful and fast web Services
+          </h2>
+        </div>
+
+        <div class="mt-10">
+          <img
+            src="./images/heroImage.jpg"
+            alt="group disscussion"
+            class="h-[9.5rem] md:h-full rounded-xl w-full object-cover"
+          />
+        </div>
+        <div class="max-w-sm ml-6 md:ml-36 mt-10 tracking-wide">
+          <h2 class="title">Story, emotion and purpose</h2>
+          <p class="mt-7 text-sm text-gray-400">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goal in short period of time.
+          </p>
+          <div class="mt-7 relative">
+            <label
+              for="contact-email"
+              class="text-base text-gray-400 tracking-wide"
+              >Want us to contact you?</label
+            >
+            <input
+              type="email"
+              class="mt-2 py-4 pl-3 w-[100%] rounded-lg bg-gray-200 focus:border-black focus:border-2 pr-24 outline-none ring-0"
+              id="contact-email"
+              placeholder="Email"
+            />
+            <button
+              class="text-white py-3 px-6 bg-blue-400 text-lg rounded-lg absolute top-[40%] right-1"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-28 ml-2 md:ml-14">
+          <div>
+            <h2 class="title max-w-md" id="services">We offer high demand services</h2>
+            <!-- card container -->
+            <div
+              class="mt-12 space-y-16 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row"
+            >
+              <!-- 1st card -->
+              <div class="card">
+                <span class="material-icons card-icon bg-blue-400"> edit </span>
+                <h3 class="card-title">UI/UX Design</h3>
+
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat cupiditate reprehenderit quas nulla totam sed velit
+                  delectus inventore!
+                </p>
+
+                <button class="card-button">
+                  Get started
+                </button>
+              </div>
+
+              <!-- 2nd card -->
+              <div class="card">
+                <span class="material-icons bg-green-500 card-icon">
+                  unfold_more
+                </span>
+                <h3 class="card-title">Front End</h3>
+
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat cupiditate reprehenderit quas nulla totam sed velit
+                  delectus inventore!
+                </p>
+
+                <button class="card-button">
+                  Get started
+                </button>
+              </div>
+
+              <!-- 3rd card -->
+              <div class="card">
+                <span class="material-icons card-icon bg-red-500">
+                  storage
+                </span>
+                <h3 class="card-title">Back End</h3>
+
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat cupiditate reprehenderit quas nulla totam sed velit
+                  delectus inventore!
+                </p>
+
+                <button class="card-button">
+                  Get started
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <h2
+              class="text-[1.85rem] leading-snug md:text-5xl max-w-sm md:max-w-xl md:leading-snug"
+             id="works">
+              Good design means good business
+            </h2>
+            <!-- our work -->
+            <div class="mt-14 grid gap-y-12 lg:grid-cols-2 gap-x-10 lg:gap-y-0">
+              <!-- 1st design -->
+              <div class="design-card">
+                <img src="./images/smarthome.jpg" alt="" class="rounded-3xl" />
+                <h3 class="design-type">Full Stack application</h3>
+                <h4 class="design-title">Smart home dashboard</h4>
+              </div>
+
+              <!-- 2nd design -->
+              <div class="design-card">
+                <img src="./images/onboard.png" alt="" class="rounded-3xl" />
+                <h3 class="design-type">UI/UX Design</h3>
+                <h4 class="design-title">Onboard application</h4>
+              </div>
+              <!-- 3rd design -->
+              <div class="design-card">
+                <img src="./images/booking.png" alt="" class="rounded-3xl" />
+                <h3 class="design-type">Mobile application</h3>
+                <h4 class="design-title">Booking system</h4>
+              </div>
+
+              <!-- 4th design -->
+              <div class="design-card">
+                <img
+                  src="./images/juice-product.png"
+                  alt=""
+                  class="rounded-3xl"
+                />
+                <h3 class="design-type">Front End application</h3>
+                <h4 class="design-title">Juice product homepage</h4>
+              </div>
+
+              <div class="lg:col-span-2 flex lg:justify-end">
+                <a href="" class="flex text-green-500 text-lg"
+                  >see more
+                  <span class="material-icons ml-2"> trending_flat </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- team  -->
+          <div class="mt-24 grid lg:grid-cols-3 gap-y-12">
+            <div class="team max-w-[12rem] space-y-2">
+              <h3 class="text-sm text-red-500">Meet the team</h3>
+              <h4 class="text-xl md:text-2xl md:leading-snug">
+                We are chilled and a laidback team
+              </h4>
+
+              <p class="text-xs text-gray-400">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          <!-- team photo -->
+
+            <div
+              class="team grid grid-cols-2 grid-rows-2 gap-3 md:gap-0 lg:col-span-2 mr-auto lg:pr-24"
+            >
+              <div class="row-span-2 flex items-center">
+                <img
+                  src="./images/person3.png"
+                  alt=""
+                  class="w-40 md:w-56 rounded-xl"
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./images/person1.png"
+                  alt=""
+                  class="w-40 md:w-56 rounded-xl"
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./images/person2.png"
+                  alt=""
+                  class="w-44 md:w-64 rounded-xl lg:h-56 object-cover lg:mt-4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- clients -->
+          <div class="mt-20">
+            <p class="tracking-wide text-xl max-w-lg" id="clients">
+              "Fast and outstanding results.Edie understands their customer's
+              needs. They have a young and talented team."
+            </p>
+            <div class="mt-5 flex">
+              <div>
+                <img
+                  src="./images/person4.png"
+                  alt=""
+                  class="w-11 mr-5 rounded-lg"
+                />
+              </div>
+              <div>
+                <h5 class="text-xs">Carlos Tran</h5>
+                <h6 class="text-sm mt-1 text-gray-400">The Decorate Gatsby</h6>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div
+        class="mt-28 bg-gray-900  px-14 py-10 grid md:grid-cols-2 lg:grid-cols-4 text-white gap-12"
+      >
+        <div class="md:px-10">
+          <ul class="text-lg space-y-3">
+            <li>
+              <a class="block hover:text-purple-400" href="#">Home</a>
+            </li>
+            <li>
+              <a class="block hover:text-purple-400" href="#services">Services</a>
+            </li>
+            <li>
+              <a class="block hover:text-purple-400" href="#works">Our Works</a>
+            </li>
+            <li>
+              <a class="block hover:text-purple-400" href="#clients">Clients</a>
+            </li>
+            <li>
+              <a class="block hover:text-purple-400" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="b">
+          <h1 class="font-Heebo text-4xl">Edie</h1>
+          <div class="flex mt-3 space-x-3">
+            <a href=https://www.instagram.com/?hl=en" target="_blank">
+
+              <img src="./images/instagram.svg" alt="" class="social-media-icon" />
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+
+              <img src="./images/linkedin.svg" alt="" class="social-media-icon" />
+            </a>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+
+              
+              <img src="./images/twitter.svg" alt="" class="social-media-icon" />
+            </a>
+          </div>
+        </div>
+        <div class="md:col-span-full lg:col-span-2">
+          <div class="md:w-[70%] md:mx-auto">
+
+            <div class="relative" id="contact">
+              <label
+              for="contact-email"
+              class="text-base tracking-wide"
+              >Want us to contact you?</label
+              >
+              <input
+              type="email"
+              class="mt-2 py-4 pl-3 rounded-lg bg-gray-200  pr-28 text-gray-800 w-full outline-none ring-0 focus:border-blue-400 focus:border-[1px] "
+              id="contact-email"
+              placeholder="Email"
+              />
+              <button
+              class="text-white py-2 px-6 bg-blue-400 text-lg rounded-lg absolute top-[45%] right-2"
+              >
+              Join
+            </button>
+          </div>
+        </div>
+
+        </div>
+        <div class="text-center col-span-full">
+   <a
+          href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0"
+          target="_blank"
+          class="dev-challenges-profile  text-white hover:text-gray-300 active:text-green-400 "
+          >Created by Anish Chhetri -  DevChallenges.io</a
+        >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

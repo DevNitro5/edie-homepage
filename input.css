@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+  .title {
+    @apply text-[2rem] md:text-5xl leading-snug md:leading-snug;
+  }
+  .card-icon {
+    @apply text-white   px-3 py-2 rounded-xl text-4xl  !important;
+  }
+  .card-title {
+    @apply text-xl md:text-2xl tracking-wide mt-5;
+  }
+  .card-description {
+    @apply max-w-sm text-lg text-gray-400 mt-6;
+  }
+  .card-button {
+    @apply p-4  rounded-xl mt-10 text-gray-500 bg-gray-200 hover:text-white hover:bg-blue-400;
+  }
+  .card {
+    @apply p-6 bg-white hover:shadow-lg shadow-md cursor-pointer;
+  }
+  .design-type {
+    @apply text-gray-400 text-sm mt-4;
+  }
+  .design-title {
+    @apply text-xl md:text-2xl tracking-wide mt-2;
+  }
+  .social-media-icon {
+    @apply cursor-pointer transition duration-300 ease-in-out hover:scale-125;
+  }
+
+  @media (min-width: 1024px) {
+    .design-card:nth-child(odd) {
+      margin-top: 6rem;
+    }
+    .design-card:nth-child(even) {
+      height: 0;
+    }
+    .team:nth-child(odd) {
+      margin-top: 4rem;
+    }
+  }
+}
